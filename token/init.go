@@ -13,5 +13,5 @@ func GetJwtSecret() string {
 	if len(jwt_secret) > 0 {
 		return jwt_secret
 	}
-	return "return jwt_secret"
+	return "jwt_secret"
 }
