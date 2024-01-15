@@ -13,5 +13,4 @@ git push -u github main
 
 git tag "v${VERSION}"
 git push --tags -u github main
-git push --tags -u gitee main
 
