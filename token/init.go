@@ -9,7 +9,7 @@ func SetJwtSecret(jwtSecret string) {
 		jwt_secret = "jwt_secret"
 	}
 }
-func GetJwtSecret() {
+func GetJwtSecret() string {
 	if len(jwt_secret) > 0 {
 		return jwt_secret
 	}
