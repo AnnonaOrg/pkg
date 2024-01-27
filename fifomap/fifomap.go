@@ -49,5 +49,12 @@ func (m *FIFOMap) RemoveOldest() {
 }
 
 func (m *FIFOMap) Count() int {
+	m.mu.Lock()
+	defer m.mu.Unlock()
 	return len(m.keys)
+}
+func (m *FIFOMap) Keys() []string {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+	return m.keys
 }
