@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION=0.0.8
+VERSION=0.0.9
 APPNAME=pkg
 
 git add .
