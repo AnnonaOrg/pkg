@@ -13,14 +13,14 @@ func main() {
 	fifoMap.Set("key2", "value2")
 
 	fmt.Println("Before removing oldest:")
-	for _, key := range fifoMap.keys {
+	for _, key := range fifoMap.Keys() {
 		fmt.Printf("Key: %s, Value: %v\n", key, fifoMap.items[key])
 	}
 
 	fifoMap.RemoveOldest()
 
 	fmt.Println("\nAfter removing oldest:")
-	for _, key := range fifoMap.keys {
+	for _, key := range fifoMap.Keys() {
 		fmt.Printf("Key: %s, Value: %v\n", key, fifoMap.items[key])
 	}
 }
